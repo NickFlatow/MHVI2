@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.f {
+  color:#000;
+}
+
+#header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*center elements*/
+#putincenter {
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+}
+
+#textinput {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+tr:nth-child(even) {
+  background:white;
+}
+tr:nth-child(odd) {
+  background:gray;
+}
+.not {
+  color: red;
+}
+.approved {
+  color: green;
+}
+.error {
+  color: #F00;
+  font-size: 10px;
+}
+.hide{
+  display:none;
+}
