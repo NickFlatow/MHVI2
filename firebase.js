@@ -8,10 +8,9 @@
     messagingSenderId: "630227463036"
   };
   firebase.initializeApp(config);
-// blah
+  
   $(document).ready(function(){
     //search database for item
-    //ERRORS left shoes
     $("#search").click(function(){
         //grab string from searchName textbox
         searchDatabase($('#searchName').val(),$('#object'));
@@ -40,7 +39,7 @@
             window.location.href = "admin.html";
           }
           else if (user.email == 'driver@mhvi.com'){
-            window.location = "driver.html";
+            window.location.href = "driver.html";
           }
         }
       //onAuthStateChanged
@@ -52,6 +51,7 @@
       window.location = "login.html";
     });
     const dbTable = firebase.database().ref();
+
     dbTable.startAt('A').orderByKey().on('child_added', snap => {
         $('#tableBody').append('<tr name ='+snap.key +'><td class="item"><span>' + snap.key + '</span></td><td class = "cost">' + snap.val().Cost + '</td><td class = quantity>' + snap.val().Quantity +
             '<td><button type = "button" class="update">Update</button></td></tr>' +
@@ -78,7 +78,6 @@
       //add all itmes from databases
       dbDropdown.on('child_added', snap => {
         //driver list
-        // console.log(snap.key.replace(/ /g,''));
         $('#list').append('<option value = ' + snap.key + '>' + snap.val().Item + '</option>');
         $('#adminList').append('<option value = ' + snap.key + '>' + snap.val().Item + '</option>');
       })
