@@ -25,12 +25,6 @@ body {
   font-family: "Open Sans";
   font-size: 14px;
 }
-tr:nth-child(even) {
-  background:white;
-}
-tr:nth-child(odd) {
-  background:gray;
-}
 .not {
   color: red;
 }

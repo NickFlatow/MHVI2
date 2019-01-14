@@ -8,7 +8,7 @@
     messagingSenderId: "630227463036"
   };
   firebase.initializeApp(config);
-  
+
   $(document).ready(function(){
     //search database for item
     $("#search").click(function(){
@@ -53,9 +53,9 @@
     const dbTable = firebase.database().ref();
 
     dbTable.startAt('A').orderByKey().on('child_added', snap => {
-        $('#tableBody').append('<tr name ='+snap.key +'><td class="item"><span>' + snap.key + '</span></td><td class = "cost">' + snap.val().Cost + '</td><td class = quantity>' + snap.val().Quantity +
+        $('#tableBody').append('<tr name ='+snap.key +'><td class="item"><span>' + snap.key + '</span></td><td class = "cost">' + snap.val().Cost + '</td><td class = quantity>' + snap.val().Quantity + '</td>'+
             '<td><button type = "button" class="update">Update</button></td></tr>' +
-            '<tr class = "hide">'+
+            '<tr class = "hide bg-primary">'+
               '<td><button type = "button" class = "delete">Delete</button></td>'+
               '<td class = "hidden"><input type="text" name="costTR" placeholder="Cost"></td>'+
               '<td class = "hidden"><input type="text" name="quantityTR" placeholder="Quantity"></td>'+

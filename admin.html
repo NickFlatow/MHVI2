@@ -14,26 +14,14 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
     <script src="validate.js"></script>
     <script src="functions.js"></script>
-
+    <!--Bootstrap functionality-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
-    <!-- <script>
-    let user = firebase.auth().currentUser;
-    // console.log("top " + user.email);
-    if (user == null){
-      window.location = "login.html";
-    }
-    else if (user.email != 'admin@mhvi.com'){
-      console.log(user.email);
-      firebase.auth().signOut();
-      window.location = "login.html";
-    }
-    </script> -->
-
   <div class="container" id = "dbEntryForm">
-    <form name="mhvi">
-      <h1>MHVI</h1>
-      <h2>Database Entry Form</h2>
+    <h1>MHVI</h1>
+    <h2>Database Entry Form</h2>
+    <form name="mhvi" class = "form-inline">
       <div class = "inline">
         <label for="item">Item</label>
         <input type="text" name="item" id="item" placeholder="Enter the name of the item">
@@ -52,7 +40,7 @@
   <br>
   <br>
   <form id = "table">
-    <table id="itemTable">
+    <table id="itemTable" class = "table table-dark table-hover">
       <thead>
       <tr>
         <th>Item</th>
