@@ -15,11 +15,13 @@ $(document).ready(function(){
       updateDatabase(item,quantity);
     }
   });
+  //btn class update
   $('#tableBody').on('click','.update',function(){
     let $row = $(this).closest("tr");   // Find the row
     let $nextRow = $row.next("tr"); // Find the next row down
     $nextRow.toggle(); //show hide hidden row
   });
+  //btn class submit
   $('#tableBody').on('click','.submit',function(){
     let $row = $(this).closest("tr"); // get the row where the button was pushed
     let $prevRow = $row.prev(); // get the previous row
@@ -31,6 +33,7 @@ $(document).ready(function(){
       adminUpdateDatabase(item,quantity,cost);
     }
   });
+  //btn class delte
   $('#tableBody').on('click','.delete',function(){
     let $row = $(this).closest('tr');
     let item = $row.prev().find(".item").text();
