@@ -33,8 +33,8 @@ $(document).ready(function(){
     if ($('#driver').valid()) {
       let item = $('#list').find(":selected").text();
       let quantity = $('#driverTxtUpdate').val();
-      updateDatabase(item,quantity);   
-    }
+      updateDatabase(item,quantity);
+    }   
   });
   $('#driverBack').click(function(){
     $('#driverDropOff').removeClass("hide");
