@@ -20,17 +20,46 @@
 
   </head>
   <body>
-    <form id = "driver">
-      <h1>Driver</h1>
+
+    <button type = "button" id ="driverPickUp">pick up</button>
+    <button type = "button" id ="driverDropOff">drop off</button>
+    <form id = "driver" class = "hide">
+      <h1 id = "pickUpHeading" class = "hide">Pick Up</h1>
+      <h1 id = "dropOffHeading" class = "hide">Drop Off</h1>
       <select id = "list" class ="form-control" name = "list">
         <option value = "">Select Item</option>
       </select>
       <pre id = "driverOutput" class = "f"></pre>
       <input type ="text" name ="driverTxtUpdate" id = "driverTxtUpdate" placeholder = "Quantity">
-      <button type = "button" id ="driverPickUp">pick up</button>
-      <button type = "button" id ="driverDropOff">drop off</button>
+      <button type = "button" id = "driverDropOffSubmit" class = "hide">Submit Drop Off</button>
+      <button type = "button" id = "driverPickUpSubmit" class = "hide">Submit Pick Up</button>
+      <button type = "button" id = "driverBack" class = "hide">Go Back</button>
     </form>
-    
+
+
+
+    <!-- <form id = "driverDropOffForm" class = "hide">
+      <h1>Drop Off</h1>
+      <select id = "list" class ="form-control" name = "list">
+        <option value = "">Select Item</option>
+      </select>
+      <pre id = "driverOutput" class = "f"></pre>
+      <input type ="text" name ="driverTxtUpdate" id = "driverTxtUpdate" placeholder = "Quantity">
+      <button type = "submit">submit</button>
+    </form>
+
+    <form id = "driverPickUpForm" class = "hide">
+      <h1>Pick Up</h1>
+      <select id = "list" class ="form-control" name = "list">
+        <option value = "">Select Item</option>
+      </select>
+      <pre id = "driverOutput" class = "f"></pre>
+      <input type ="text" name ="driverTxtUpdate" id = "driverTxtUpdate" placeholder = "Quantity">
+      <button type = "submit">submit</button>
+    </form> -->
+
+
+
     </div>
     <br>
     <br>
