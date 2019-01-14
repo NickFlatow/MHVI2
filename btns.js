@@ -24,7 +24,7 @@ $(document).ready(function(){
     //check if driver form meets validation rules
     if ($('#driver').valid()) {
       let item = $('#list').find(":selected").text();
-      let quantity = $('#driverTxtUpdate').val();
+      let quantity = $('#driverQuantityUpdate').val();
       updateDatabase(item,(-1 * quantity));
     }
   });
@@ -32,7 +32,7 @@ $(document).ready(function(){
     //check if driver form meets validation rules
     if ($('#driver').valid()) {
       let item = $('#list').find(":selected").text();
-      let quantity = $('#driverTxtUpdate').val();
+      let quantity = $('#driverQuantityUpdate').val();
       updateDatabase(item,quantity);
     }   
   });
